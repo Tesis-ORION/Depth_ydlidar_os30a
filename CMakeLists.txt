@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ydlidar_os30a VERSION 0.0.0.4)
+project(depth_ydlidar_os30a VERSION 1.0.0.0)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -31,6 +31,8 @@ set(DEPENDENCIES
     tf2
     tf2_ros
     sensor_msgs
+    stereo_msgs
+    tf2_geometry_msgs
     OpenCV
     cv_bridge
 )
@@ -44,6 +46,8 @@ find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(stereo_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(cv_bridge REQUIRED)
 
