@@ -19,7 +19,9 @@
 **Depth ydlidar os30a** is a package for ROS2 Humble that allow us to use ydlidar os30a depth camera. This package was originally made by <a href="https://github.com/kartiksoni01/ydlidar_os30a">kartiksoni01</a> so all credits to him, we only fixed the package to be compatible with humble as it was only compatible with ROS2 Foxy.
 
 ## 🎥 Demostration
-TODO: Upload the video
+https://github.com/user-attachments/assets/8386454b-54ee-470a-bbeb-41b6919b4d29
+
+
 
 ## 📝 How to Build
 
