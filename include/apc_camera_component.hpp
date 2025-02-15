@@ -26,13 +26,13 @@
 
 #include "tf2_msgs/msg/tf_message.hpp"
 #include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 #include "std_msgs/msg/string.hpp"
 
 #include <string>
 
-#include <cv_bridge/cv_bridge.h>
+#include <cv_bridge/cv_bridge.hpp>
 
 #include "EYS3DSystem.h"
 #include "devices/CameraDevice.h"

@@ -1,6 +1,6 @@
 # Depth ydlidar os30a
 [![language](https://img.shields.io/badge/language-c++-239120)](#)
-[![OS](https://img.shields.io/badge/OS-Ubuntu_22.04-0078D4)](#)
+[![OS](https://img.shields.io/badge/OS-Ubuntu_24.04-0078D4)](#)
 [![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64%2C%20ARM%2C%20ARM64-FF8C00)](#)
 [![GitHub release](https://img.shields.io/badge/release-v1.0.9-4493f8)](#)
 [![GitHub release date](https://img.shields.io/badge/release_date-february_2025-96981c)](#)
@@ -16,7 +16,7 @@
 
 ## 🚀 About
 
-**Depth ydlidar os30a** is a package for ROS2 Humble that allow us to use ydlidar os30a depth camera. This package was originally made by <a href="https://github.com/kartiksoni01/ydlidar_os30a">kartiksoni01</a> so all credits to him, we only fixed the package to be compatible with humble as it was only compatible with ROS2 Foxy.
+**Depth ydlidar os30a** is a package for ROS2 Jazzy that allow us to use ydlidar os30a depth camera. This package was originally made by <a href="https://github.com/kartiksoni01/ydlidar_os30a">kartiksoni01</a> so all credits to him, we only fixed the package to be compatible with humble as it was only compatible with ROS2 Foxy.
 
 ## 🎥 Demostration
 https://github.com/user-attachments/assets/8386454b-54ee-470a-bbeb-41b6919b4d29
