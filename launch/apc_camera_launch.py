@@ -8,10 +8,17 @@ from launch_ros.actions import Node
 
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
+from launch.conditions import UnlessCondition
 
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    # Añadimos el argumento de lanzamiento "norviz"
+    norviz_arg = DeclareLaunchArgument(
+        'norviz',
+        default_value='false',
+        description='Si es true, no se lanzará el nodo RViz'
+    )
     rviz_config_dir = os.path.join(get_package_share_directory('depth_ydlidar_os30a'), 'rviz', 'apc.rviz')
     base_frame = 'dm_base_frame'
     camera_model_1 = ''
@@ -39,6 +46,7 @@ def generate_launch_description():
     qos_config_dir = os.path.join(get_package_share_directory('depth_ydlidar_os30a'), 'config', 'common.yaml')
 
     ld = LaunchDescription()
+    ld.add_action(norviz_arg)
 
     DM_device_node = Node(
         package="depth_ydlidar_os30a",
@@ -241,7 +249,7 @@ def generate_launch_description():
             arguments=["0", "0", "0", "0", "0", "0", "dm_base_frame", "imu_frame"]
     )
     RVIZ_node = Node(
-        package='rviz2', executable='rviz2', name="rviz2", output='screen', arguments=['-d', rviz_config_dir]
+        package='rviz2', executable='rviz2', name="rviz2", output='screen', arguments=['-d', rviz_config_dir], condition=UnlessCondition( LaunchConfiguration('norviz') )
     )
 
     if multi_module == False :
